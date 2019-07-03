@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.s-button-conten{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ddd;
+}
+.s-button:hover{
+    background-color: #fff;
+}
+.s-button:hover .s-button-play{
+    color: #65509e;
+}
+.s-button{
+    background-color: #65509e;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    height: 15px;
+    transition: all 0.2s ease;
+}
+.s-button-play{
+    display: flex;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.fa-play:before {
+    content: "\f04b";
+    margin-right: 0.5em;
+}
