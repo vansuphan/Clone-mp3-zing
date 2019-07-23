@@ -1,0 +1,107 @@
+.s-search{
+    display: grid;
+    grid-template-columns:0fr 14fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    border-radius: 5px;
+}
+.s-content-search {
+    grid-column: 2/3;
+    grid-row: 2;
+    background-color: #121212;
+    color: #cecece;
+    border-radius: 5px;
+    border: solid 1p none;
+}
+
+#s-form label {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    border: none;
+    color: #757575;
+}
+#s-form{
+    display: grid;
+    grid-template-columns: 0.8fr 9.2fr;
+    grid-template-rows: repeat(1, minmax(40px, auto));
+    background-color: #121212;
+    border: none;
+    border-radius: 5px;
+}
+#s-form input{
+    font-size: 14px;
+    color: #a0a0a0;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    background-color: #121212;
+    outline: none;
+    border-radius: 5px;
+}
+.fa-search{
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+#s-form input:focus{
+    color: #a0a0a0;
+}
+.fa-search::before {
+    position: absolute;
+    border: none;
+    background-color: #121212;
+    color: #757575;
+    cursor: pointer;
+}
+.s-search-data{
+    display: none;
+}
+.s-search-data.on{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    z-index: 1;
+    border-radius: 2px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    background-color: #2e2e2e;
+    transition: all .2s ease;
+}
+.s-search-data ul{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+.s-search-data p{
+    padding: 5px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.s-search-data ul li{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style-type: none;
+}
+.s-search-data ul li a{
+    text-decoration: none;
+    grid-column: 2;
+    text-align: center;
+    padding: 10px;
+    transition: all .2s;
+    border: 2px solid #3e3d3d;
+    background-color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a0a0a0;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.s-search-data ul li a:hover{
+    color: #65509e;
+    border-color: #65509e;
+    background-color: rgba(101,80,158,.2);
+}

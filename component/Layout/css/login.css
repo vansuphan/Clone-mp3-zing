@@ -1,0 +1,60 @@
+.s-login{
+    display:grid;
+    grid-template-columns: 0.5fr 0.7fr 2fr 0.5fr;
+    grid-template-rows: repeat(3, minmax(20px));
+    color: white;
+    border-radius: 50%;
+}
+.s-login img{
+    cursor: pointer;
+    grid-column: 2/3;
+    max-width: 40px;
+    border-radius: 50%;
+    padding: 20px 5px 20px 5px;
+}
+.s-login-info{
+    display: grid;
+    grid-template-rows: 1.2fr 1fr 1fr 1fr;
+    padding-left: 10px;
+}
+.s-login-info .s-login-name{
+    grid-row: 2/3;
+    font-size: 14px;
+    font-weight: 500;
+}
+.s-login-info .s-login-account{
+    grid-row: 3/4;
+    font-size: 12px;
+    font-weight: 100;
+}
+.s-login-info .s-login-account >a{
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+.s-login-name > a{
+    color: #dbdbdb;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    
+}
+.s-login-info .s-login-name >a:hover{
+    color: #6e55b4;
+}
+.s-arrow-login{
+    display: grid;
+    grid-template-rows: auto 20px auto;
+    cursor:pointer;
+}
+.s-arrow-login .fa-angle-down{
+    grid-row: 2;
+    padding:0px 10px;
+    font-size: 20px;
+}
+.fa-angle-down::before {
+    position: absolute;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+    font-size: 25px;
+}

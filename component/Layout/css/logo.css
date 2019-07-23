@@ -1,0 +1,10 @@
+.s-logo{
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    grid-template-columns: 1fr 10fr 1fr;
+   }
+   .s-logo img{
+       max-width: 100px;
+       grid-column: 2/3;
+       grid-row: 2;
+  }
