@@ -2,6 +2,7 @@
     display:grid;
     grid-template-columns: 0.5fr 0.7fr 2fr 0.5fr;
     grid-template-rows: repeat(3, minmax(20px));
+    position: relative;
     color: white;
     border-radius: 50%;
 }
@@ -26,6 +27,7 @@
     grid-row: 3/4;
     font-size: 12px;
     font-weight: 100;
+    padding-top: 5px;
 }
 .s-login-info .s-login-account >a{
     color: #a0a0a0;
@@ -57,4 +59,7 @@
     color: #757575;
     cursor: pointer;
     font-size: 25px;
+}
+.fa-angle-down:hover {
+    color: #6e55b4;
 }

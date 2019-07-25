@@ -63,6 +63,6 @@ button.s-slides-button.s-slides-light-grey.s-slides-right {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 15px;
     right: 10px;
 }
