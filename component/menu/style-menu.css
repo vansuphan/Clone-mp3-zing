@@ -1,11 +1,13 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-.s-content-menu{
+
+.s-content-menu {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,18 +15,20 @@ body{
     background-color: white;
     color: #cecece;
 }
-.s-main-menu{
-    background-color:#1c1c1c;
+
+.s-main-menu {
+    background-color: #1c1c1c;
     display: flex;
 }
-.s-nav-menu{
+
+.s-nav-menu {
     display: flex;
     flex-direction: row;
     padding: 0px 10px;
     margin: 0px;
 }
 
-.s-main-menu .s-nav-menu .has-submenu>a{
+.s-main-menu .s-nav-menu .has-submenu>a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -34,12 +38,19 @@ body{
     position: relative;
     transition: all 0.2s;
 }
-.has-submenu{
+
+.s-main-menu .s-nav-menu .has-submenu>a:hover {
+    color: #7b62ca;
+    transition: all 0.2s;
+}
+
+.has-submenu {
     display: flex;
     list-style-type: none;
     margin: 0 0;
 }
-.s-main-menu .s-nav-menu .has-submenu>a::before{
+
+.s-main-menu .s-nav-menu .has-submenu>a::before {
     content: "";
     margin: 0;
     bottom: 1px;
@@ -50,7 +61,8 @@ body{
     height: 2px;
     transition: all 0.3s;
 }
-.s-main-menu .s-nav-menu .has-submenu>a:hover::before{
+
+.s-main-menu .s-nav-menu .has-submenu>a:hover::before {
     content: "";
     margin: 0;
     bottom: 1px;
@@ -60,32 +72,40 @@ body{
     height: 2px;
     background-color: #7b62ca;
 }
-.has-submenu .section-submenu{
+
+.has-submenu .section-submenu {
     display: none;
     position: relative;
-    margin: 0; 
+    margin: 0;
+    transition: all 0.2s;
 }
 
-.has-submenu:hover .section-submenu{
+.has-submenu:hover .section-submenu {
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     margin-top: 48px;
+    transition: all 0.2s;
 }
+
 /* sub menu */
-.s-main-muti-sub-menu{
+.s-main-muti-sub-menu {
     background-color: #2e2e2e;
     display: flex;
+    transition: all 0.2s;
 }
-.s-main-muti-sub-menu .s-muti-sub-menu{
+
+.s-main-muti-sub-menu .s-muti-sub-menu {
     display: flex;
-    padding:0px; 
-}
-.s-content-muti-sub-menu{
     padding: 0px;
 }
-.s-content-muti-sub-menu .s-sub-menu-title{
+
+.s-content-muti-sub-menu {
+    padding: 0px;
+}
+
+.s-content-muti-sub-menu .s-sub-menu-title {
     display: flex;
     font-size: 14px;
     font-weight: 600;
@@ -94,20 +114,26 @@ body{
     padding: 20px 20px 0px 20px;
     text-transform: uppercase;
 }
-.s-muti-sub-menu .s-nav-muti-menu{
+
+.s-muti-sub-menu .s-nav-muti-menu {
     padding: 0 10px;
 }
-.s-muti-sub-menu .s-nav-muti-menu li{
+
+.s-muti-sub-menu .s-nav-muti-menu li {
     list-style-type: none;
-    margin: 20px 0px; 
+    margin: 20px 0px;
 }
-.s-muti-sub-menu .s-nav-muti-menu li a{
+
+.s-muti-sub-menu .s-nav-muti-menu li a {
     padding: 10px 10px;
     text-decoration: none;
     font-size: 14px;
     color: #a0a0a0;
 }
-.s-muti-sub-menu .s-nav-muti-menu li a:hover{
-    background:#232323;
+
+.s-muti-sub-menu .s-nav-muti-menu li a:hover {
+    background: #232323;
+    color: #7b62ca;
 }
+
 /*End sub meunu*/
