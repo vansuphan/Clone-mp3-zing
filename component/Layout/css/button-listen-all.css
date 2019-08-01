@@ -1,0 +1,29 @@
+.s-button:hover{
+    background-color: #fff;
+}
+.s-button:hover .s-button-play{
+    color: #65509e;
+}
+
+.s-button {
+    display: grid;
+    grid-column: end;
+    background-color: #65509e;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.s-button-play {
+    display: grid;
+    grid-column-gap: 5px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    grid-template-columns: auto auto;
+}
+.fa-play:before {
+    content: "\f04b";
+    margin-right: 0.5em;
+}

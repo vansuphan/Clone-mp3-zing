@@ -1,12 +1,12 @@
-
-
 .s-slide-content{
     width:100%;
     height:100%;
     background-color: #232323;
+    transition: all .5s ease-in-out;
 }
 .s-sides{
     width: 100%;
+    transition: all .5s ease-in-out;
 }
 .s-sides img{
     max-width: 1011px;
@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: 1fr;
     text-decoration: none;
+    transition: all .5s ease-in-out;
 }
 .s-slide-section {
     position: absolute;
@@ -46,15 +47,23 @@ button.s-slides-button:hover{
 button.s-slides-button.s-slides-light-grey.s-slides-right {  
     right: -1014.5px;  
 }
-
 .s-nuber-slide img{
     padding: 0;
     margin: 0;
     max-width: 50px;
     border: solid 2px rgba(0, 0, 0, 0);
+    border-radius: 1px;
+    transition: all .5s ease-in-out;
+}
+.s-slide-content a {
+    cursor: pointer;
 }
 .s-nuber-slide img:hover{
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
+    border: solid 2px white;
+}
+.s-slides-red img{
+    transition: all .5s ease-in-out;
     border: solid 2px white;
 }
 .s-slides-button-list{

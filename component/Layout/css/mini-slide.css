@@ -1,14 +1,19 @@
 .s-slide-all-content {
     display: grid;
+    position: relative;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%, 0);
     overflow: hidden;
+    padding: 10px 0px 20px 0px;
     grid-template-columns: 1fr 28fr 1fr;
 }
+
 .s-slide-all {
-    overflow: hidden;
-    grid-column: 2/3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 18px;
+    transition: all 0.5s ease-in-out;
 }
 .s-title-mini-slide {
     padding: 25px 30px;
@@ -51,7 +56,6 @@ button.s-mini-slides-button{
     outline: none;
     z-index: 5;
 }
-
 
 /*Min slide*/
 .s-content-item-album {
@@ -163,8 +167,8 @@ button.s-mini-slides-button{
     display: flex;
     position: relative;
     overflow: hidden;
+    border-radius: 2px;
 }
-
 .s-img-play-items img {
     max-width: 210px;
     overflow: hidden;

@@ -1,4 +1,3 @@
-
 .s-content-menu {
     display: flex;
     justify-content: start;
@@ -120,7 +119,8 @@
     padding: 10px 10px;
     text-decoration: none;
     font-size: 14px;
-    color: #a0a0a0;
+    font-weight: 500;
+    color: #cecece;
 }
 
 .s-muti-sub-menu .s-nav-muti-menu li a:hover {
@@ -128,4 +128,16 @@
     color: #7b62ca;
 }
 
+.s-submenu-vip {
+    position: relative;
+    left: 23%;
+    top: 24%;
+    display: flex;
+    width: 30px;
+    background-image: url(https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/vip-button.svg);
+    background-repeat: no-repeat;
+}
+.s-submenu-vip:hover{
+    opacity: 0.8;
+}
 /*End sub meunu*/

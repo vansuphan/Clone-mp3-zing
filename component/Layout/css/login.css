@@ -1,6 +1,6 @@
 .s-login{
     display:grid;
-    grid-template-columns: 0.5fr 0.7fr 2fr 0.5fr;
+    grid-template-columns: 0.5fr 0.7fr 10fr 0.5fr;
     grid-template-rows: repeat(3, minmax(20px));
     position: relative;
     color: white;

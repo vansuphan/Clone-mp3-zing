@@ -1,0 +1,146 @@
+.s-scroll-and-info {
+    display: grid;
+    grid-template-rows: minmax(20px, 40px);
+    grid-row-gap: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.s-scroll {
+    background-color: gray;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    border: solid 1px gray;
+}
+
+.s-scroll:hover {
+    background: #555;
+    border: solid 1px #555;
+}
+
+.s-scroll a {
+    cursor: pointer;
+}
+
+.s-scroll-arrow {
+    font-size: 40px;
+    color: aliceblue;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.s-info-file {
+    font-size: 30px;
+    color: gray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s-info {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    border: solid 1px #555;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-info:hover {
+    border: solid 1px #555;
+}
+
+.s-info-file:hover {
+    color: #555;
+}
+
+/******* Scroll header *******/
+.s-header-fixed.s-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-header-content {
+    grid-column-gap: 20px;
+    grid-template-columns: 0.5fr 4fr 1fr .5fr;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-search {
+    grid-column: 3;
+    grid-template-columns: 1fr 14fr 0.5fr;
+    transition: all 0.3s ease-in-out;
+}
+.s-header-fixed.s-header .svg-inline--fa.fa-w-16 {
+    width: 1em;
+    padding: 0px 5px;
+    transition: all 0.3s ease-in-out;
+}
+.s-header-fixed.s-header .s-search-data.on{
+    display: none;
+}
+.s-header-fixed.s-header .s-login {
+    grid-column: 4;
+    grid-template-columns: 1fr;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-login-info {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-login img {
+    grid-column: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-arrow-login {
+    grid-row: 1;
+    grid-column: 3;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-main-menu {
+    background-color: rgba(0,0,0,0);
+    top: 15px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-left-menu,
+.s-header-fixed.s-header .s-right-menu {
+    display: none;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.3s ease-in-out;
+}
+
+.s-header-fixed.s-header .s-menu {
+    background-color: none;
+    position: absolute;
+    top: -65px;
+    left: 145px;
+    transition: all 0.3s ease-in-out;
+}
+.s-header-fixed.s-header .menu-no-active{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.s-header-fixed.s-header .s-content-menu{
+    background-color: rgba(0,0,0,0);
+    transition: all 0.3s ease-in-out;
+}
+.s-header-fixed.s-header .s-user-dropdown.on {
+    left: -132px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+/******* End Scroll header *******/

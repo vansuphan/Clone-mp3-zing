@@ -1,8 +1,6 @@
-
-
-.s-user-dropdown{
+.s-user-dropdown {
     display: none;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
     position: absolute;
     top: 75px;
@@ -13,37 +11,50 @@
     background-color: #2e2e2e;
     border-radius: 3px;
     user-select: none;
-    box-shadow: 0 1px 5px 0 rgba(72,72,72,.2);
+    box-shadow: 0 1px 5px 0 rgba(72, 72, 72, .2);
     border-top: 1px solid #3e3d3d;
+    transition: all 0.3s ease-in-out;
 }
-.s-user-dropdown.on{
+
+.s-user-dropdown.on {
     display: grid;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.s-user-dropdown ul{
+
+.s-user-dropdown ul {
     display: grid;
     list-style-type: none;
     padding: 0px;
+    transition: all 0.3s ease-in-out;
 }
+
 .s-user-dropdown ul li {
     display: grid;
     padding: 0;
+    transition: all 0.3s ease-in-out;
 }
-.s-user-dropdown ul li a{
+
+.s-user-dropdown ul li a {
     display: flex;
     padding: 10px 10px;
     text-decoration: none;
     color: #a0a0a0;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
 }
-.s-user-dropdown ul li a span{
+
+.s-user-dropdown ul li a span {
     margin-left: 10px;
 }
+
 .s-user-dropdown div {
     display: grid;
     text-align: center;
     border-top: 1px solid #3e3d3d;
     padding: 10px 55px;
+    transition: all 0.3s ease-in-out;
 }
+
 .s-user-dropdown div a {
     background-color: #f8e71c;
     text-decoration: none;
@@ -53,16 +64,19 @@
     padding: 9px 15px;
     border-radius: 4px;
 }
+
 .s-user-dropdown ul li a:hover {
     color: #fff;
     background-color: #4c4c4c;
 }
+
 .s-user-dropdown div a:hover {
     transition: all 0.2s ease-in-out;
     background-color: #fcfcfc;
     color: #6e55b4;
 }
-.checkbox{
+
+.checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -77,7 +91,8 @@
     margin-left: 75px;
     cursor: pointer;
 }
-.checkbox:before{
+
+.checkbox:before {
     content: " ";
     width: 18px;
     height: 17px;
@@ -85,13 +100,14 @@
     transition: 0.2s;
     position: absolute;
     border-radius: 50%;
-    
 }
-.checkbox:checked{
-    background-color:#815fdd;
+
+.checkbox:checked {
+    background-color: #815fdd;
     border: 1px solid #815fdd;
     transition: 0.2s;
 }
-.checkbox:checked:before{
+
+.checkbox:checked:before {
     transform: translate(10px, 0);
 }

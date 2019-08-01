@@ -54,6 +54,8 @@
 }
 .s-search-data{
     display: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 .s-search-data.on{
     display: grid;
@@ -65,7 +67,8 @@
     border-radius: 2px;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
     background-color: #2e2e2e;
-    transition: all .2s ease;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
 }
 .s-search-data ul{
     padding: 0px;
