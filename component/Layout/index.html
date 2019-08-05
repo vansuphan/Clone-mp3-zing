@@ -8,7 +8,8 @@
     <title>Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile và TV</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./mp3layout.css">
-    <link rel="shortcut icon" type="image/png" href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png">
+    <link rel="shortcut icon" type="image/png"
+        href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png">
     <link rel="stylesheet" href="./font/fontawesome-free-5.9.0-web/css/all.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/logo.css">
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="./css/section-kind-and-theme.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/scroll-and-info.css">
+    <link rel="stylesheet" href="./css/section-singer.css">
     <link rel="stylesheet" class="s-change-style-color" href="#">
     <script defer src="./js/control.js"></script>
     <script defer src="./font/fontawesome-free-5.9.0-web/js/all.js"></script>
@@ -45,7 +47,7 @@
                 <div class="s-content-search">
                     <form action="#" id="s-form" style="position: relative">
                         <label for="s-search-items"><i class="fa fa-search"></i></label>
-                        <input type="search" name="s-search" id="s-search-items"
+                        <input type="search" autocomplete="off" name="s-search" id="s-search-items"
                             placeholder="Nhập tên bài hát, ca sĩ hoặc mv...">
                         <div class="s-search-data">
                             <p>Từ khóa hot</p>
@@ -60,10 +62,13 @@
                 </div>
             </div>
             <div class="s-login">
-                <img src="https://s120-ava-talk.zadn.vn/2/2/b/7/9/120/c7c5e751e506d986025ba2139169d9ce.jpg" alt="">
+                <a href="https://www.facebook.com/vansu.phan" target="_blank">
+                    <img src="https://s120-ava-talk.zadn.vn/2/2/b/7/9/120/c7c5e751e506d986025ba2139169d9ce.jpg" alt="">
+                </a>
+
                 <div class="s-login-info">
                     <div class="s-login-name">
-                        <a href="#">Su Su</a>
+                        <a href="https://www.facebook.com/vansu.phan" target="_blank">Su Su</a>
                     </div>
                     <div class="s-login-account">
                         <a href="#">Tài khoản thường</a>
@@ -82,7 +87,7 @@
                             <a href="#"><i class="fas fa-sign-out-alt"></i><span>Đăng Xuất</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-sun"></i><span>Nền Tối</span>
+                            <a href="#"><i class="fas fa-sun"></i><span>Nền Sáng</span>
                                 <input type="checkbox" name="" class="checkbox on">
                             </a>
                         </li>
@@ -467,11 +472,16 @@
             <section class="s-main-section-1">
                 <div class="s-main-slide">
                     <div class="s-slide-content">
-                        <a href="#" class="s-slides"><img src="https://photo-zmp3.zadn.vn/banner/b/5/f/5/b5f558f879e5096551db1ddbb784f659.jpg"></a>
-                        <a href="#" class="s-slides"><img src="https://photo-zmp3.zadn.vn/banner/9/f/e/b/9febe25ae0f2e36627d06be0dd5a4456.jpg"></a>
-                        <a href="#" class="s-slides"><img src="https://photo-zmp3.zadn.vn/banner/0/d/2/d/0d2d64a3a9688ffd69311b4a431408b0.jpg"></a>
-                        <a href="#" class="s-slides"><img src="https://photo-zmp3.zadn.vn/banner/7/f/d/2/7fd240ed2495a5239060bbce054a81ab.jpg"></a>
-                        <a href="#" class="s-slides"><img src="https://photo-zmp3.zadn.vn/banner/c/2/8/3/c283135e1e08fc149dbd08686833f0aa.jpg"></a>
+                        <a href="#" class="s-slides"><img
+                                src="https://photo-zmp3.zadn.vn/banner/b/5/f/5/b5f558f879e5096551db1ddbb784f659.jpg"></a>
+                        <a href="#" class="s-slides"><img
+                                src="https://photo-zmp3.zadn.vn/banner/9/f/e/b/9febe25ae0f2e36627d06be0dd5a4456.jpg"></a>
+                        <a href="#" class="s-slides"><img
+                                src="https://photo-zmp3.zadn.vn/banner/0/d/2/d/0d2d64a3a9688ffd69311b4a431408b0.jpg"></a>
+                        <a href="#" class="s-slides"><img
+                                src="https://photo-zmp3.zadn.vn/banner/7/f/d/2/7fd240ed2495a5239060bbce054a81ab.jpg"></a>
+                        <a href="#" class="s-slides"><img
+                                src="https://photo-zmp3.zadn.vn/banner/c/2/8/3/c283135e1e08fc149dbd08686833f0aa.jpg"></a>
                         <div class="s-slide-center">
                             <div class="s-slide-section">
                                 <button class="s-slides-button s-slides-light-grey s-slides-left"
@@ -480,11 +490,16 @@
                                     onclick="plusDivs(1)"> ❯ </button>
                             </div>
                             <div class="s-slides-button-list">
-                                <a class="s-nuber-slide" onmouseover="currentDiv(1)"><img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/7/f/4/c/7f4c678796641ac4d9febdfce2d5b97b.jpg"></a>
-                                <a class="s-nuber-slide " onmouseover="currentDiv(2)"><img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/f/4/e/6/f4e62b5a2b648d8919e772a499f75501.jpg"></a>
-                                <a class="s-nuber-slide" onmouseover="currentDiv(3)"><img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/9/6/f/4/96f43cdaf991229e8efea7773a134c9b.jpg"></a>
-                                <a class="s-nuber-slide" onmouseover="currentDiv(4)"><img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/b/7/d/9/b7d91797238b47fa6f618f8291a53723.jpg"></a>
-                                <a class="s-nuber-slide" onmouseover="currentDiv(5)"><img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/3/2/3/e/323e4f3de2c03a5990b8715aebc39756.jpg"></a>
+                                <a class="s-nuber-slide" onmouseover="currentDiv(1)"><img
+                                        src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/7/f/4/c/7f4c678796641ac4d9febdfce2d5b97b.jpg"></a>
+                                <a class="s-nuber-slide " onmouseover="currentDiv(2)"><img
+                                        src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/f/4/e/6/f4e62b5a2b648d8919e772a499f75501.jpg"></a>
+                                <a class="s-nuber-slide" onmouseover="currentDiv(3)"><img
+                                        src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/9/6/f/4/96f43cdaf991229e8efea7773a134c9b.jpg"></a>
+                                <a class="s-nuber-slide" onmouseover="currentDiv(4)"><img
+                                        src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/b/7/d/9/b7d91797238b47fa6f618f8291a53723.jpg"></a>
+                                <a class="s-nuber-slide" onmouseover="currentDiv(5)"><img
+                                        src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/3/2/3/e/323e4f3de2c03a5990b8715aebc39756.jpg"></a>
                             </div>
 
                         </div>
@@ -588,7 +603,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/b/2/b/eb2b15240f65f898ce786e9be5b0df4f.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/b/2/b/eb2b15240f65f898ce786e9be5b0df4f.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -607,7 +623,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/d/c/a/adcadd47740b8c1737b9b7ac1a8add4f.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/d/c/a/adcadd47740b8c1737b9b7ac1a8add4f.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -625,7 +642,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/c/f/c/bcfc663e92400e2f705ba2bf00019405.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/c/f/c/bcfc663e92400e2f705ba2bf00019405.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -643,7 +661,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/8/1/f/681f2765e195d2776cfddbee21247db6.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/8/1/f/681f2765e195d2776cfddbee21247db6.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -960,7 +979,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/7/e/0/f/7e0f225282b4d7fcd4fca1f9f997c18a.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/7/e/0/f/7e0f225282b4d7fcd4fca1f9f997c18a.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -978,7 +998,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/3/4/9/6/3496a80cd6d28ef5bced794cf3baa170.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/3/4/9/6/3496a80cd6d28ef5bced794cf3baa170.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -997,7 +1018,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/5/7/6/1576e921675b55acfa973a84b7d097d2.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/5/7/6/1576e921675b55acfa973a84b7d097d2.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1015,7 +1037,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/7/f/1/a/7f1a27a06d8aefd0b320f793c69a724c.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/7/f/1/a/7f1a27a06d8aefd0b320f793c69a724c.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1033,7 +1056,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/8/3/5/9/8359ee41e91fff1a05ea6419dc563564.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/8/3/5/9/8359ee41e91fff1a05ea6419dc563564.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1051,7 +1075,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/b/2/b/eb2b15240f65f898ce786e9be5b0df4f.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/e/b/2/b/eb2b15240f65f898ce786e9be5b0df4f.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1070,7 +1095,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/d/c/a/adcadd47740b8c1737b9b7ac1a8add4f.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/d/c/a/adcadd47740b8c1737b9b7ac1a8add4f.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1088,7 +1114,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/c/f/c/bcfc663e92400e2f705ba2bf00019405.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/b/c/f/c/bcfc663e92400e2f705ba2bf00019405.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1106,7 +1133,8 @@
                         <div class="s-content-item-album">
                             <div class="s-item-album-all">
                                 <div class="s-img-play-items">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/8/1/f/681f2765e195d2776cfddbee21247db6.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/8/1/f/681f2765e195d2776cfddbee21247db6.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-main-item-album">
                                     <div class="s-item-album">
@@ -1175,7 +1203,8 @@
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/f/b/8/0fb8057f2c117b7bdbe9c3190467fb56.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/f/b/8/0fb8057f2c117b7bdbe9c3190467fb56.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Chẳng Ai Có Thể Ngờ</a></div>
@@ -1189,14 +1218,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/9/f/0/c9f08b14e121b2a5ad8d21a7c31929d7.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/9/f/0/c9f08b14e121b2a5ad8d21a7c31929d7.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Mơ Duyên</a></div>
@@ -1210,14 +1240,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/9/f/f/99ff54be3684d2543a737241e9eccdf4.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/9/f/f/99ff54be3684d2543a737241e9eccdf4.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">OK ! Đi Đi Em</a></div>
@@ -1231,14 +1262,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/e/1/d/ce1d5bdcbd8265ed12a9d423b2390381.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/e/1/d/ce1d5bdcbd8265ed12a9d423b2390381.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Thật Tuyệt Vời Khi Ở Bên Em</a></div>
@@ -1252,14 +1284,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/3/1/8f319880a0e3cb976e0b90c0c36abc6a.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/3/1/8f319880a0e3cb976e0b90c0c36abc6a.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Em Đi Đâu</a></div>
@@ -1277,7 +1310,7 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1287,7 +1320,8 @@
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/4/5/e/c45e677d2d8ff02f0ec14577992cfb5f.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/4/5/e/c45e677d2d8ff02f0ec14577992cfb5f.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Hãy Xem Như Ta Chưa Từng</a></div>
@@ -1301,14 +1335,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/a/4/2/9a427c971bbb696aa89b9f37924bf7e9.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/a/4/2/9a427c971bbb696aa89b9f37924bf7e9.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Ai Có Mà Hay</a></div>
@@ -1322,14 +1357,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/7/d/c/f7dc805bc548d508d3a6730c8892e89d.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/7/d/c/f7dc805bc548d508d3a6730c8892e89d.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Vai Phụ</a></div>
@@ -1343,14 +1379,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/e/8fce77bfc4b86de8435879a55f0cb12e.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/e/8fce77bfc4b86de8435879a55f0cb12e.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Gửi Anh Tình Yêu</a></div>
@@ -1367,14 +1404,15 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a  class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="s-content-all-new-songs">
                             <div class="s-content-items-new-song">
                                 <div class="s-img-new-song">
-                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/2/8/4/4284fffd31d598de462584f176b99084.jpg" alt="">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/2/8/4/4284fffd31d598de462584f176b99084.jpg"
+                                        alt="">
                                 </div>
                                 <div class="s-info-item-new-song">
                                     <div class="s-title-new-song"><a href="#">Vì Yêu Ai Đó Quá Nhiều</a></div>
@@ -1390,7 +1428,7 @@
                                 <div class="s-new-song-muti-icon">
                                     <a href="#"><i class="fab fa-youtube s-youtube"></i></a>
                                     <a href="#"> <i class="fas fa-play s-play"></i></a>
-                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                    <a class="s-song-info"><i class="fas fa-ellipsis-h"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1666,6 +1704,89 @@
             </section>
             <section class="s-main-section-8">
             </section>
+            <section class="s-main-section-3 s-main-section-9">
+                <div class="s-title-mini-slide s-title-mini-singer">
+                    <span>Nghệ Sĩ Nổi Bật ❯ </span>
+                </div>
+                <div class="s-slide-all-content">
+                    <div class="s-slide-all s-slide-singer-all">
+                        <div class="s-content-item-album s-content-item-singer">
+                            <div class="s-item-album-all s-item-singer-all">
+                                <div class="s-img-play-items s-img-singer-items">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/f/8/b/7f8b5dcb4290cf1013aa438b83353a22.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="s-title-play-items s-title-singer-items">
+                                <a href="#">Phương Ly</a>
+                            </div>
+                        </div>
+                        <div class="s-content-item-album s-content-item-singer">
+                            <div class="s-item-album-all s-item-singer-all">
+                                <div class="s-img-play-items s-img-singer-items">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/3/43d8be33dc00a33132c82adb9d0d3a54_1509355224.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="s-title-play-items s-title-singer-items">
+                                <a href="#">Bích Phương</a>
+                            </div>
+                        </div>
+                        <div class="s-content-item-album s-content-item-singer">
+                            <div class="s-item-album-all s-item-singer-all">
+                                <div class="s-img-play-items s-img-singer-items">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/e/ee58fcc0ff45002b8d416bd7685809ce_1487040461.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="s-title-play-items s-title-singer-items">
+                                <a href="#">Sơn Tùng M-TP</a>
+                            </div>
+                        </div>
+                        <div class="s-content-item-album s-content-item-singer">
+                            <div class="s-item-album-all s-item-singer-all">
+                                <div class="s-img-play-items s-img-singer-items">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/e/e/e/eeee188a74736ed2423d4231b6b41424.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="s-title-play-items s-title-singer-items">
+                                <a href="#">K-ICM</a>
+                            </div>
+                        </div>
+                        <div class="s-content-item-album s-content-item-singer">
+                            <div class="s-item-album-all s-item-singer-all">
+                                <div class="s-img-play-items s-img-singer-items">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/e/ee58fcc0ff45002b8d416bd7685809ce_1487040461.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="s-title-play-items s-title-singer-items">
+                                <a href="#">Sơn Tùng M-TP</a>
+                            </div>
+                        </div>
+                        <div class="s-content-item-album s-content-item-singer">
+                            <div class="s-item-album-all s-item-singer-all">
+                                <div class="s-img-play-items s-img-singer-items">
+                                    <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/e/e/e/eeee188a74736ed2423d4231b6b41424.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="s-title-play-items s-title-singer-items">
+                                <a href="#">K-ICM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-mini-slides" style="position: absolute">
+                    <div class="s-next-left-mini-slide s-mini-slides-button"><button
+                            class="s-mini-slides-button s-mini-slides-left"> ❮ </button>
+                    </div>
+                    <div class="s-next-right-mini-slide s-mini-slides-button">
+                        <button class="s-mini-slides-button s-mini-slides-right"> ❯ </button>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="s-right-main"></div>
     </main>
@@ -1704,10 +1825,13 @@
     <div class="s-scroll-and-info">
         <div class="s-scroll">
             <a><i class="fas fa-arrow-circle-up s-scroll-arrow"></i></a>
-            
+
         </div>
         <div class="s-info">
-            <a href="https://docs.google.com/forms/d/1MBR_N1S1vB7LKbSbY0C-03kjDyM-Lp6fGLoyoebJTq0/viewform?edit_requested=true"><i class="far fa-file-alt s-info-file"></i></a>
+            <a href="https://docs.google.com/forms/d/1MBR_N1S1vB7LKbSbY0C-03kjDyM-Lp6fGLoyoebJTq0/viewform?edit_requested=true"
+                target="_blank">
+                <i class="far fa-file-alt s-info-file"></i>
+            </a>
         </div>
     </div>
 </body>

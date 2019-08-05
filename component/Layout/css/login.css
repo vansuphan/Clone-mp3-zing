@@ -6,9 +6,11 @@
     color: white;
     border-radius: 50%;
 }
+.s-login > a {
+    grid-column: 2/3;
+}
 .s-login img{
     cursor: pointer;
-    grid-column: 2/3;
     max-width: 40px;
     border-radius: 50%;
     padding: 20px 5px 20px 5px;

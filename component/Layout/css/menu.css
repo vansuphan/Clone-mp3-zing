@@ -4,11 +4,13 @@
     align-items: center;
     background-color: #1c1c1c;
     color: #cecece;
+    transition: all 0.3s ease-in-out;
 }
 
 .s-main-menu {
     background-color: #1c1c1c;
     display: flex;
+    transition: all 0.3s ease-in-out;
 }
 
 .s-nav-menu {
@@ -16,6 +18,7 @@
     flex-direction: row;
     padding: 0px 10px;
     margin: 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .s-main-menu .s-nav-menu .has-submenu>a {

@@ -1,4 +1,4 @@
-/********* Form search ************/
+/*************    Form Search    *************/
 let classListItems = Array.from(document.getElementsByClassName("s-search-data"));
 let listForms = Array.from(document.querySelectorAll("form"));
 classListItems.forEach(function (values, index) {
@@ -11,7 +11,18 @@ classListItems.forEach(function (values, index) {
         }
     });
 });
-/********* Form search ************/
+
+let dataSearch = Array.from(document.querySelectorAll(".s-search-data >ul li a"));
+let inputSearch = document.getElementById("s-search-items");
+console.log(dataSearch);
+dataSearch.forEach(function(el,id){
+    var data = el.innerText;
+    el.addEventListener("click",function(){
+        inputSearch.value = data;
+        console.log(data);
+    });
+});
+/*************  End Form Search *************/
 
 /********* Dropdown Login ************/
 let classDropDownLogin = document.querySelector(".s-arrow-login");
@@ -100,14 +111,14 @@ sectionSlide.forEach(function (elements, indexs) {
                 valuesR.addEventListener("click", () => {
                     widthTranslate -= 989;
                     values.style.transform = "translate(" + widthTranslate + "px,0)";
-                    console.log(widthTranslate);
+                    //console.log(widthTranslate);
                 });
             });
             buttonMiniLeft.forEach(function (valuesB, ind) {
                 valuesB.addEventListener("click", () => {
                     widthTranslate += 989;
                     values.style.transform = "translate(" + widthTranslate + "px,0)";
-                    console.log(widthTranslate);
+                    //console.log(widthTranslate);
                 });
             });
         }
@@ -116,7 +127,7 @@ sectionSlide.forEach(function (elements, indexs) {
                 valuesB.addEventListener("click", () => {
                     widthTranslate += 989;
                     values.style.transform = "translate(" + widthTranslate + "px,0)";
-                    console.log(widthTranslate);
+                    //console.log(widthTranslate);
                 });
             });
         }
@@ -189,16 +200,35 @@ scrollTop(scrollS);
 function changeBackgroudColor(){
     var classChangeBackgroudColor = document.querySelector(".s-change-style-color");
     var classButtonChange = document.querySelector(".checkbox");
-    console.log(classButtonChange);
+    //console.log(classButtonChange);
     classButtonChange.addEventListener("click",()=>{
         if(classButtonChange.checked == true){
-            console.log("hahaha");
+            //console.log("hahaha");
             classChangeBackgroudColor.setAttribute("href","./css/change-backgroud-color.css");
         }else{
-            console.log("hiihi");
+            //console.log("hiihi");
             classChangeBackgroudColor.setAttribute("href","#");
         }
     });
 }
 changeBackgroudColor();
 /*************  End Change background color   *************/
+
+/*************  Form info of song   *************/
+// var stringHTML = "<div class='s-song-info-mini' style = 'background:red'> xin chào</div>";
+// var areaSongInfo = document.querySelector(".s-new-song-muti-icon");
+// var songInfo = Array.from(document.getElementsByClassName("s-song-info"));
+// var test = document.querySelectorAll(".s-song-info");
+// for(var i = 0; i < test.length; i++ ){
+//     test[i].addEventListener("click", function(){
+       
+//     });
+// }
+// songInfo.forEach(function(values,index){
+//     values.addEventListener("click",function(){
+//        console.log(stringHTML);
+//     });
+// });
+
+
+/*************  End Form info of song   *************/

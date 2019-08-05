@@ -1,0 +1,42 @@
+.s-slide-singer-all {
+    grid-column-gap: 30px;
+}
+.s-title-mini-singer {
+    padding: 25px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.s-content-item-singer {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: #1c1c1c;
+    border-radius: 3px;
+}
+.s-item-singer-all {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.s-img-singer-items {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.s-img-singer-items img {
+    max-width: 150px;
+    overflow: hidden;
+    transition: all 1.2s;
+    border-radius: 50%;
+}
+.s-title-singer-items{
+    display: grid;
+}
+.s-title-singer-items a{
+    text-align: center;
+}
